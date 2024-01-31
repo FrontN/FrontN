@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+
+    <!--l'essenziale-->
+    <meta charset="UTF-8" />
+    <meta name="author" content="Michel Christ-vie Bimbakila">
+    <meta name="description" content="Sono appassionato della peculiarità e non ho una chiara comprensione di ciò 
+        che viene considerato 'normale';. Benvenuto nel mio mondo!">
+    <title>FrontN.it</title>
+
+    <!--configurare la pagina per tutti i dispositivi-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Kanit:wght@200&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <!--css-->
+    <link rel="stylesheet" href="index.css">
+
+    <!--Icons-->
+    <script src="https://kit.fontawesome.com/0f483126c3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!--icona del sito-->
+    <link rel="icon" type="image" href="imagine ilbro.it/logo.jpg">
+
+    <!--Internal CSS-->
+    <style>
+        .container {
+        max-width: 60%;
+        margin: 0 auto;
+    }
+    
+    .button {
+        box-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;
+    }
+    
+    .hero-image {
+        background: url(imagineilbro.it/nuovaHOmePage.jpg) center center;
+        background-size: cover;
+        position: relative;
+        height: 70vh;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
+    .hero-text {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    #glow {
+        font-family:serif;
+        line-height: 7vh;
+        color: rgba(23, 28, 50, 1);
+        font-size: 3.5vw;
+        text-transform: uppercase;
+        text-shadow: 0 0 5px darkblue, 0 0 20px #00fffb;
+    }
+    
+    #click {
+        display: inline-block;
+        margin-top: 5px;
+        font-size: 0.9vw;
+        padding: 1em 3.3em;
+        cursor: pointer;
+        transform: perspective(200px) rotateX(0deg);
+        color:white;
+        font-weight: 900;
+        text-transform: uppercase;
+        border: none;
+        border-radius: 5px;
+        background: linear-gradient(0deg, rgba(63, 94, 251, 1) 0%, rgba(70, 135, 252, 1));
+        box-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;
+        will-change: transform;
+        transition: all 0.3s;
+        border-bottom: 2px solid rgba(70, 135, 252, 1);
+    
+    }
+    #click:hover{
+        transform: perspective(180px) rotateX(30deg) translateY(2px);
+        background: red;
+    }
+    #click:active{
+        transform: perspective(170px) rotateX(36deg) translateY(5px);
+    }
+    
+    #benvenuto {
+        margin: 30px auto;
+        text-align: center;
+        font-size: 25px;
+    }
+    
+    .hidden {
+        display: none;
+    }
+    
+    #benvenuto h1 {
+        margin-bottom: 10px;
+    }
+    #benvenuto::first-letter{
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size: 150%;
+    }
+    
+    #articolo {
+        height: 300px;
+        display:flex;
+        justify-content: center;
+    }
+    
+    article {
+        width: 380px;
+        height: 290px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
+        margin: 0 10px;
+    }
+    
+    
+    article a {
+        color: white;
+        background-color: #fd880b;
+        padding: 8px;
+        border-radius: 3px;
+    }
+    
+    article a:hover {
+        background-color: #444;
+    }
+    
+    article h2 {
+        color: #fff;
+        background-color: #333;
+    }
+    
+    article p {
+        margin: 10px auto;
+        color: black;
+    }
+    
+    #article1 {
+        background: url(imagineilbro.it/latof.jpg) no-repeat center;
+        background-size: cover;
+        word-spacing: -2.5px;
+        letter-spacing: 0.009px;
+    }
+    
+    #article2 {
+        background: url(imagineilbro.it/profilo.jpg) no-repeat center;
+        background-size: cover;
+        line-height: 24.5px;
+    }
+    
+    #article3 {
+        background: url(imagineilbro.it/latof2.jpg) no-repeat center;
+        background-size: cover;
+    }
+    
+    .overlay {
+        max-width: 160px;
+        height: 290px;
+        background-color: rgba(123, 123, 123, 0.7);
+        border-radius: 10px 0 0 10px;
+        box-sizing: border-box;
+        text-align: center;
+        padding-top: 20px;
+        overflow: auto;
+    }
+    
+    #aboutme {
+        text-align: center;
+    }
+    
+    #aboutme h1 {
+        margin: 30px auto;
+    }
+    
+    #aboutme p {
+        margin-bottom: 30px;
+    }
+    
+    #contatti {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    #contatti h1 {
+        margin: 15px;
+    }
+    
+    #contatti p {
+        border: 1px solid;
+        border-radius: 25px;
+        padding: 20px;
+        background-color: orange;
+    }
+    /*-----------------------------------------------media Query---------------------------------------------------------------------*/
+    @media screen and (max-width: 600px){
+        h1{
+            font-size: 20px;
+        }
+        .container{
+            max-width: 90vw;
+        }
+        .hidden{
+            display: block;
+        }
+        .hero-image {
+            height: 45vh;
+        }
+        #glow {
+            line-height: 4vh;
+            font-size: 9vw;
+            color: rgb(180, 191, 243);
+        }
+        #click {
+            font-size: 50%;
+        }
+        #benvenuto {
+            font-size: 15px;
+            margin: 15px auto;
+        }
+        #benvenuto h1{
+            margin-bottom: 3px;
+            border-bottom: 1px solid black;
+        }
+        #articolo {
+            display: inline-block;
+        }
+        article{
+            height: 77%;
+            width: 100vw;
+            margin:0 0 10px;
+        }
+        article a{
+            font-size: 60%;
+        }
+        article p {
+            font-size: 72%;
+            margin: 3% auto;
+        }
+        #article1 {
+            letter-spacing: normal;
+            word-spacing: normal;
+        }
+        .overlay {
+            height: 100%;
+            background-color: rgba(123, 123, 123, 0.8);
+            padding-top: 15px;
+        }
+        #aboutme h1{
+            margin: 10px auto;
+            border-bottom: 1px solid black;
+        }
+        #aboutme p{
+            margin-bottom: 5px;
+            font-size: 15px;
+        }
+        #contatti {
+            margin-bottom: 10px;
+        }
+        #contatti h1 {
+            margin: 5px;
+        }
+        #contatti p {
+            padding: 0;
+        }
+    }
+    </style>    
+
+</head>
+
+<body>
+    <!--header-->
+    <header>
+        <div
+            style="background: url(imagineilbro.it/ricercaimagine1.jpg) 100% 60%; background-size: cover; text-align: center;">
+            <a id="logo" href="Index.html"><span id="ilbro">Front'N</span><span id="punto">.</span></a>
+        </div>
+        <nav id="menu">
+            <div id="caché"><button type="button" onclick="alert ('NON ANCORA DISPONIBILE')" style="background-color: #333;"><i class="fa-solid fa-bars"></i></div>
+            <ul id="menuitems" class="clearfix">
+                <li><a href="Index.html" style="background: #009e0d;">home</a></li>
+                <li><a href="Article.html">articoli</a></li>
+                <li><a href="About.html">about me</a></li>
+                <li><a href="Michel christ-vie bimbakila.pdf" target="_blank">curriculum</a></li>
+                <li class="dropdown">
+                        <a id="dropdownbtn" href="#contatti">contattami</a>
+                        <div class="dropdown-content">
+                            <ul style="display: flex;">
+                                <li><a href="mailto: Michelchristviebimbakila@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
+                                <li><a href="tel:+393792760346"><i class="fa-solid fa-phone"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/michel-christ-vie-bimbakila-aaa168228/#:~:text=www.linkedin.com/in/michel%2Dchrist%2Dvie%2Dbimbakila%2Daaa168228"
+                                    target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                </li>
+                <li>
+                    <form action="#">
+                    <input type="search" id="search" name="search" placeholder="Search..">
+                    </form>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--main-->
+    <main>
+        <div class="hero-image">
+            <div class="hero-text">
+                <h1 id="glow">Naviga l'intricato percorso della vita <br> con coraggio e speranza</h1>
+                <a href="#benvenuto"><button id="click">inizia ora</button></a>
+            </div>
+        </div>
+        <section id="benvenuto">
+            <div class="container hidden">
+                <h1>Benvenuti nel mio mondo!</h1>
+                <p>
+                    Questo spazio è dedicato a un'avventura unica, e voi siete i benvenuti a farne parte. Insieme possiamo
+                    esplorare le meraviglie della vita, affrontare le sfide con coraggio e condividere momenti speciali.
+                    Ogni contributo, ogni storia
+                    e ogni connessione arricchiranno il tessuto di questa esperienza. Non esitate a unirvi a me in questo
+                    viaggio, perché la bellezza
+                    di questa avventura è nel camminare insieme. Siete pronti? La porta è aperta, entrate e godiamoci il
+                    viaggio!
+                </p>
+            </div>
+        </section>
+        <section>
+            <div id="articolo">
+                <article id="article1">
+                    <div class="overlay">
+                        <h2 style="padding: 10px 0;">avventure</h2>
+                        <p>Esplora il mondo con me! Entra nel racconto e lasciati trasportare dalla magia delle
+                            esperienze. Siamo pronti per un'avventura senza limiti.🌟🗺️</p>
+                        <a href="Avventure.html" class="button">let's go</a>
+                    </div>
+                </article>
+
+                <article id="article2">
+                    <div class="overlay">
+                        <h2>studi e ricerche</h2>
+                        <p> Pronto per un viaggio di apprendimento e crescita? <br> Entra subito nel mondo della
+                            conoscenza ! <br> 🚀👩‍🎓📖</p>
+                        <a href="Studi&Ricerche.html" class="button">let's go</a>
+                    </div>
+                </article>
+                <article id="article3">
+                    <div class="overlay">
+                        <h2 style="padding: 10px 0;">progetti</h2>
+                        <p>Ogni progetto è una storia in sé, un capitolo scritto con dedizione e passione. immergiti in
+                            un mondo d'idee e realizzazione. Vieni a dare un'occhiata!</p>
+                        <a href="Progetti.html" class="button">let's go</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section id="contatti">
+            <div class="container">
+                <h1>contattami!</h1>
+                <p><samp>Caro visitatore,<br><br>
+
+                        Sono entusiasta di condividere il mio percorso e le esperienze di vita con te. Se stai cercando
+                        connessioni autentiche,
+                        condivisione di idee o semplicemente desideri intraprendere un dialogo, sarò più che felice di
+                        sentire da te.
+                        La bellezza della vita risiede nella condivisione, e il mio spazio è aperto a nuove amicizie,
+                        collaborazioni e conversazioni
+                        significative. Non esitare a contattarmi per qualsiasi domanda, suggerimento o anche solo per uno
+                        scambio di pensieri.Inviami un messaggio, e insieme possiamo tessere nuovi legami e arricchire
+                        il nostro cammino. <br>
+                        Con sincera attesa,<br><br>
+                        <span style="font-family: Great vibes;">Michel Christ -Vie Bimbakila.</span></samp>
+                </p>
+            </div>
+        </section>
+        <div id="logos">
+            <nav>
+                <a href="https://instagram.com/mi_love242?igshid=MTNiYzNiMzkwZA%3D%3D&utm_source=qr" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100083570462831" target="_blank"><i
+                        class="fa-brands fa-square-facebook"></i></a>
+                <a href="https://twitter.com/VieBimbakila" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://youtube.com/@michelchrist-viebimbakila3929?si=nOpWlLrcg3Q8E5ve" target="_blank"><i
+                        class="fa-brands fa-square-youtube"></i></a>
+                <a href="https://www.linkedin.com/in/michel-christ-vie-bimbakila-aaa168228/#:~:text=www.linkedin.com/in/michel%2Dchrist%2Dvie%2Dbimbakila%2Daaa168228"
+                    target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto: Michelchristviebimbakila@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                <a href="tel:+393792760346"><i class="fa-solid fa-phone"></i></a>
+            </nav>
+        </div>
+    </main>
+    <aside>
+        <div id="tornasu">
+            <a href="Index.html" title="Tornare su"><i class="fa-solid fa-chevron-up" style="color: white;"></i></a>
+        </div>
+    </aside>
+    
+    <!--footer-->
+    <footer style="background: url(imagineilbro.it/ricercaimagine1.jpg) 100% 73%; background-size: cover;">
+        <div id="end">
+            <a href="Index.html" id="logo"><span id="ilbro">Front'N</span><span id="punto">.</span></a>
+            <p id="diritti" style="color: white;">© 2023 - ilbro.it All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
