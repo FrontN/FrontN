@@ -50,8 +50,15 @@
         position: relative;
         height: 70vh;
         font-family: 'Courier New', Courier, monospace;
+        animation: example 20s infinite;
     }
-    
+    @keyframes example {
+        0%   {background-image: radial-gradient(circle, red, yellow, green);}
+        25%  {background-image: linear-gradient(green, yellow);}
+        50%  {background-image: linear-gradient(yellow, red);}
+        75%  {background-image: linear-gradient(red, orange);}
+        100% {background-image: linear-gradient(orange, red);}
+    }
     .hero-text {
         text-align: center;
         position: absolute;
