@@ -120,6 +120,17 @@ header #logo {
 .dropdown:hover #dropdownbtn {
     opacity: 0.5;
 }
+
+.dropdown:hover .dropdown-content::before {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 20%;
+    margin-left: -15px;
+    border-width: 7px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+  }
 /*---------------------------------------------------------------main?------------------------------------------------------------------*/
 #logos{
     display: flex;
