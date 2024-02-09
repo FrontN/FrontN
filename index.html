@@ -186,18 +186,6 @@
         overflow: auto;
     }
     
-    #aboutme {
-        text-align: center;
-    }
-    
-    #aboutme h1 {
-        margin: 30px auto;
-    }
-    
-    #aboutme p {
-        margin-bottom: 30px;
-    }
-    
     #contatti {
         text-align: center;
         margin-bottom: 20px;
@@ -239,13 +227,16 @@
         transform: none;
         background: linear-gradient(0deg, rgba(63, 94, 251, 1) 0%, rgba(70, 135, 252, 1));
         }
+        main {
+        background: white;
+    }
         #benvenuto {
             font-size: 15px;
             margin: 15px auto;
         }
         #benvenuto h1{
             margin-bottom: 3px;
-            border-bottom: 1px solid black;
+            border-bottom: 1px solid var(--black);
         }
         #articolo {
             display: inline-block;
@@ -271,14 +262,6 @@
             background-color: rgba(123, 123, 123, 0.8);
             padding-top: 15px;
         }
-        #aboutme h1{
-            margin: 10px auto;
-            border-bottom: 1px solid black;
-        }
-        #aboutme p{
-            margin-bottom: 5px;
-            font-size: 15px;
-        }
         #contatti {
             margin-bottom: 10px;
         }
@@ -301,9 +284,9 @@
             <a id="logo" href="index.html"><span id="ilbro">Front'N</span><span id="punto">.</span></a>
         </div>
         <nav id="menu">
-            <div id="caché"><button type="button" onclick="alert ('NON ANCORA DISPONIBILE')" style="background-color: #333;"><i class="fa-solid fa-bars"></i></div>
+            <div id="caché"><button type="button" onclick="alert ('NON ANCORA DISPONIBILE')" style="background-color: var(--fakeblack);"><i class="fa-solid fa-bars"></i></div>
             <ul id="menuitems" class="clearfix">
-                <li><a href="index.html" style="background: #009e0d;">home</a></li>
+                <li><a href="index.html" style="background: var(--gree);">home</a></li>
                 <li><a href="Article.html">articoli</a></li>
                 <li><a href="About.html">about me</a></li>
                 <li><a href="imagineilbro.it/Michel christ-vie bimbakila.pdf" target="_blank">curriculum</a></li>
