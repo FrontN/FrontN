@@ -40,7 +40,7 @@
     }
     
     .button {
-        box-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;
+        box-shadow: 0 0 10px #00fffb, 0 0 40px #0081bc;
     }
     
     .hero-image {
@@ -91,7 +91,7 @@
         background: linear-gradient(0deg, rgba(63, 94, 251, 1) 0%, rgba(70, 135, 252, 1));
         box-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;
         will-change: transform;
-        transition: all 0.3s;
+        transition: all .2s;
         border-bottom: 2px solid rgba(70, 135, 252, 1);
     
     }
@@ -138,7 +138,7 @@
     
     article a {
         color: white;
-        background-color: #fd880b;
+        background-color: var(--orange);
         padding: 8px;
         border-radius: 3px;
     }
@@ -148,13 +148,13 @@
     }
     
     article h2 {
-        color: #fff;
-        background-color: #333;
+        color: white;
+        background-color: var(--black);
     }
     
     article p {
         margin: 10px auto;
-        color: black;
+        color: white;
     }
     
     #article1 {
@@ -210,10 +210,10 @@
         border: 1px solid;
         border-radius: 25px;
         padding: 20px;
-        background-color: orange;
+        background-color: var(--orange);
     }
     /*-----------------------------------------------media Query---------------------------------------------------------------------*/
-    @media screen and (max-width: 500px){
+    @media screen and (max-width: 600px){
         h1{
             font-size: 20px;
         }
@@ -231,7 +231,6 @@
         #glow {
             line-height: 4vh;
             font-size: 9vw;
-            color: rgb(180, 191, 243);
         }
         #click {
             font-size: 50%;
@@ -239,9 +238,6 @@
         #click:hover{
         transform: none;
         background: linear-gradient(0deg, rgba(63, 94, 251, 1) 0%, rgba(70, 135, 252, 1));
-        }
-        #click:active{
-            transform: none;
         }
         #benvenuto {
             font-size: 15px;
