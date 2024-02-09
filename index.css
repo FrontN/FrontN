@@ -239,6 +239,7 @@ footer #logo {
     #search {
         width: 80%;
         margin: 4px 0;
+        background-image: none;
     }
     #caché{
         display: block;
