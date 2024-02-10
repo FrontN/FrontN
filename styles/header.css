@@ -1,0 +1,141 @@
+header #logo {
+    font: 65px Crete Round;
+    text-transform: uppercase;
+}
+
+#ilbro {
+    color: #fff;
+}
+
+#punto {
+    color: #ff0000;
+}
+
+#menu {
+    text-transform: uppercase;
+    font: 15px Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: var(--black);
+}
+
+#caché {
+    display: none;
+}
+
+#menuitems li {
+    display: inline-block;
+}
+
+#menuitems li:last-child {
+    float: right;
+}
+#search {
+    box-sizing: border-box;
+    width: 200px;
+    padding:5px 5px 5px 35px;
+    margin: 8px 8px 4px 0;
+    border-radius: 20px;
+    background-image: url(../imagineilbro.it/search.png);
+    background-position: 10px;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    transition: width .7s;
+}
+#search:hover{
+    background-color: #e4e4e4;
+    width: 300px;
+}
+#search:focus{
+    border: 3px solid var(--black);
+    outline: none;
+}
+
+#menuitems a {
+    display: block;
+    color: white;
+    padding: 15px;
+    margin: 0;
+    width: 120px;
+    transition: background-color .2s;
+}
+#menuitems a:hover{
+    background-color: var(--fakeblack);
+}
+
+.dropdown {
+    position: relative;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 2;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown:hover #dropdownbtn {
+    opacity: 0.5;
+}
+
+.dropdown:hover .dropdown-content::before {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 20%;
+    margin-left: -15px;
+    border-width: 7px;
+    border-style: solid;
+    border-color: transparent transparent var(--fakeblack) transparent;
+  }
+
+  @media screen and (max-width: 600px){
+    header #logo{
+        font-size: 35px;
+    }
+    #menu {
+        font-size: 10px;
+    }
+    #menuitems a{
+        padding: 10px;
+        width: 75px;
+        display: none;
+    }
+    #menuitems li:last-child{
+        float: left;
+    }
+    #search {
+        width: 80%;
+        margin: 4px 0;
+        background-image: none;
+        padding-left: 5px;
+    }
+    #search:hover{
+        width: 210px;
+    }
+    #caché{
+        display: block;
+        float: right;
+        margin: 8px 5px 3px;
+    }
+  }
+
+  @media screen and (max-width: 992px) and (min-width: 600px){
+    header #logo{
+        font-size: 50px;
+    }
+    #menuitems li{
+        float: left;
+    }
+    #menuitems li:last-child{
+        float: right;
+    }
+
+    #search {
+        width: 120px;
+        background-image: none;
+        padding-left: 5px;
+    }
+    #search:hover{
+        width: 160px;
+    }
+  }

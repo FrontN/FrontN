@@ -1,0 +1,55 @@
+.article{
+    float: left;
+    padding: 15px;
+}
+.about {
+    float: right;
+    padding: 15px;
+}
+
+.articoli{
+    width: 25%;
+    height: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    overflow: auto;
+}
+
+.articoli li a{
+    display: block;
+    margin-bottom: 4px;
+    padding: 8px;
+    background-color: white;
+    color: var(--black);
+}
+
+.article li a:hover {
+    background-color: var(--fakeblack);
+    color: white;
+}
+.about li a:hover {
+    background-color: var(--fakeblack);
+    color: white;
+}
+
+.read{
+    background: white;
+    border-radius: 3px;
+    width: 72%;
+    height: 90vh;
+    overflow: auto;
+    text-align: center;
+    margin: 15px 20px 10px 0;
+}
+
+#header{
+    padding: 50px;
+    background-color: var(--green);
+}
+
+@media screen and (max-width: 600px){
+    .read,.articoli{
+        width: 100%;
+        margin-right: 0;
+    }
+}

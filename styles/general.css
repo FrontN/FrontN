@@ -1,0 +1,70 @@
+/*-------------------------------------------------generale---------------------------------------------------------------------------*/
+body{
+    font-size: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+:root {
+    --green: #009e0d;
+    --black: #38444d;
+    --fakeblack: #333;
+    --orange: #fd880b;
+}
+main {
+    line-height: 25px;
+    background-color: var(--black);
+}
+h1 {
+    color: black;
+    text-transform: uppercase;
+    font-size: 30px;
+    text-align: center;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-style: normal;
+}
+
+a {
+    margin: 0 10px;
+    color: black;
+}
+
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*------------------------------------------------------asidebarre--------------------------------------------------------------------*/
+#tornasu {
+    position: fixed;
+    bottom: 0;
+    right: 30px;
+}
+
+/*-----------------------------------------------media Query---------------------------------------------------------------------*/
+@media screen and (max-width: 600px){
+    main {
+        background: white;
+    }
+    #tornasu{
+        right: 3px;
+    }
+}
+
+@media screen and (max-width: 992px) and (min-width: 600px){
+    #tornasu{
+        right: 3px;
+    }
+}

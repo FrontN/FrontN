@@ -23,246 +23,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 
     <!--css-->
-    <link rel="stylesheet" href="index.css">
-
+    <link rel="stylesheet" href="styles/homepage.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    
     <!--Icons-->
     <script src="https://kit.fontawesome.com/0f483126c3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
     <!--icona del sito-->
     <link rel="icon" type="image" href="imagineilbro.it/icona.ico">
-
-    <!--Internal CSS-->
-    <style>
-        .container {
-        max-width: 60%;
-        margin: 0 auto;
-    }
-    
-    .button {
-        box-shadow: 0 0 10px #00fffb, 0 0 40px #0081bc;
-    }
-    
-    .hero-image {
-        background-image: radial-gradient(circle, red, yellow, green);
-        padding: 180px;
-        font-family: 'Courier New', Courier, monospace;
-        animation: example 20s infinite;
-        text-align: center;
-    }
-    @keyframes example {
-        0%   {background-image: radial-gradient(circle, red, yellow, green);}
-        25%  {background-image: linear-gradient(green, yellow);}
-        50%  {background-image: linear-gradient(yellow, red);}
-        75%  {background-image: linear-gradient(red, orange);}
-        100% {background-image: linear-gradient(orange, red);}
-    }
-    
-    #glow {
-        font-family:serif;
-        line-height: normal;
-        color: rgba(23, 28, 50, 1);
-        font-size: 3.5vw;
-        text-transform: uppercase;
-        text-shadow: 0 0 5px darkblue, 0 0 20px #00fffb;
-    }
-    
-    #click {
-        display: inline-block;
-        margin-top: 5px;
-        font-size: 0.9vw;
-        padding: 1em 3.3em;
-        cursor: pointer;
-        transform: perspective(200px) rotateX(0deg);
-        color:white;
-        font-weight: 900;
-        text-transform: uppercase;
-        border: none;
-        border-radius: 5px;
-        background: linear-gradient(0deg, rgba(63, 94, 251, 1) 0%, rgba(70, 135, 252, 1));
-        box-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;
-        will-change: transform;
-        transition: all .2s;
-        border-bottom: 2px solid rgba(70, 135, 252, 1);
-    
-    }
-    #click:hover{
-        transform: perspective(180px) rotateX(30deg) translateY(2px);
-        background: red;
-    }
-    #click:active{
-        transform: perspective(170px) rotateX(36deg) translateY(5px);
-    }
-    
-    #benvenuto {
-        margin: 30px auto;
-        text-align: center;
-        font-size: 25px;
-    }
-    
-    .hidden {
-        display: none;
-    }
-    
-    #benvenuto h1 {
-        margin-bottom: 10px;
-    }
-    #benvenuto::first-letter{
-        font-family:Georgia, 'Times New Roman', Times, serif;
-        font-size: 150%;
-    }
-    
-    #articolo {
-        height: 300px;
-        display:flex;
-        justify-content: center;
-    }
-    
-    article {
-        width: 380px;
-        height: 290px;
-        border-radius: 10px;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
-        margin: 0 10px;
-    }
-    
-    
-    article a {
-        color: white;
-        background-color: var(--orange);
-        padding: 8px;
-        border-radius: 3px;
-    }
-    
-    article a:hover {
-        background-color: #444;
-    }
-    
-    article h2 {
-        color: white;
-        background-color: var(--black);
-    }
-    
-    article p {
-        margin: 10px auto;
-        color: white;
-    }
-    
-    #article1 {
-        background: url(imagineilbro.it/latof.jpg) no-repeat center;
-        background-size: cover;
-        word-spacing: -2.5px;
-        letter-spacing: 0.009px;
-    }
-    
-    #article2 {
-        background: url(imagineilbro.it/profilo.jpg) no-repeat center;
-        background-size: cover;
-        line-height: 24.5px;
-    }
-    
-    #article3 {
-        background: url(imagineilbro.it/latof2.jpg) no-repeat center;
-        background-size: cover;
-    }
-    
-    .overlay {
-        max-width: 160px;
-        height: 290px;
-        background-color: rgba(123, 123, 123, 0.7);
-        border-radius: 10px 0 0 10px;
-        box-sizing: border-box;
-        text-align: center;
-        padding-top: 20px;
-        overflow: auto;
-    }
-    
-    #contatti {
-        text-align: center;
-        margin-bottom: 20px;
-    }
-    #contatti h1 {
-        margin: 15px;
-    }
-    
-    #contatti p {
-        border: 1px solid;
-        border-radius: 25px;
-        padding: 20px;
-        background-color: var(--orange);
-    }
-    /*-----------------------------------------------media Query---------------------------------------------------------------------*/
-    @media screen and (max-width: 600px){
-        h1{
-            font-size: 20px;
-        }
-        .container{
-            max-width: 90vw;
-        }
-        .hidden{
-            display: block;
-        }
-        .hero-image {
-            padding: 50px;
-        }
-        #glow {
-            font-size: 9vw;
-            line-height: normal;
-        }
-        #click {
-            font-size: 50%;
-        }
-        #click:hover{
-        transform: none;
-        background: linear-gradient(0deg, rgba(63, 94, 251, 1) 0%, rgba(70, 135, 252, 1));
-        }
-        main {
-        background: white;
-    }
-        #benvenuto {
-            font-size: 15px;
-            margin: 15px auto;
-        }
-        #benvenuto h1{
-            margin-bottom: 3px;
-            border-bottom: 1px solid var(--black);
-        }
-        #articolo {
-            display: inline-block;
-        }
-        article{
-            height: 77%;
-            width: 90vw;
-            margin:0 5vw 10px;
-        }
-        article a{
-            font-size: 60%;
-        }
-        article p {
-            font-size: 72%;
-            margin: 3% auto;
-        }
-        #article1 {
-            letter-spacing: normal;
-            word-spacing: normal;
-        }
-        .overlay {
-            height: 100%;
-            background-color: rgba(123, 123, 123, 0.8);
-            padding-top: 15px;
-        }
-        #contatti {
-            margin-bottom: 10px;
-        }
-        #contatti h1 {
-            margin: 5px;
-        }
-        #contatti p {
-            padding: 0;
-        }
-    }
-    </style>    
-
 </head>
 
 <body>
@@ -318,8 +89,9 @@
                 </p>
             </div>
         </section>
+
         <section>
-            <div id="articolo">
+            <div class="article-grid">
                 <article id="article1">
                     <div class="overlay">
                         <h2 style="padding: 10px 0;">avventure</h2>
