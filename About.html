@@ -32,35 +32,31 @@
     </head>
 
 <body>
-    <header>
-        <div
-        style="background: url(imagineilbro.it/ricercaimagine1.jpg) 100% 60%; background-size: cover; text-align: center;">
-        <a id="logo" href="index.html"><span id="ilbro">Front'N</span><span id="punto">.</span></a>
+    <header class="header">
+        <div  class="column logo">
+            <a href="index.html"><span id="Frontn">Front'N</span><span id="punto">.</span></a>
         </div>
-        <nav id="menu">
-            <div id="caché"><button type="button" onclick="alert ('NON ANCORA DISPONIBILE')" style="background-color: #333;"><i class="fa-solid fa-bars"></i></div>
-                <ul id="menuitems" class="clearfix">
-                <li><a href="index.html">home</a></li>
-                <li><a href="Article.html">articoli</a></li>
-                <li><a href="About.html" style="background: #009e0d;">about me</a></li>
-                <li><a href="imagineilbro.it/Michel christ-vie bimbakila.pdf" target="_blank">curriculum</a></li>
-                <li class="dropdown">
-                    <a id="dropdownbtn" href="index.html">contattami</a>
-                    <div class="dropdown-content">
-                        <ul style="display: flex;">
-                            <li><a href="mailto: Michelchristviebimbakila@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
-                            <li><a href="tel:+393792760346"><i class="fa-solid fa-phone"></i></a></li>
-                            <li><a href="https://github.com/FrontN" target="_blank"><i class="fa-brands fa-github"></i></a></li>
-                        </ul>
-                    </div>
-                 </li>
-                 <li>
-                    <form action="#">
-                    <input type="search" id="search" name="search" placeholder="Search..">
-                    </form>
-                </li>
-            </ul>
-        </nav>
+        <div class="colum menu-container">
+            <nav class="nav-bar">
+                    <ul class="menu-items">
+                            <li><a href="index.html">home</a></li>
+                            <li><a href="Article.html">articoli</a></li>
+                            <li class="actual-page"><a href="About.html">about me</a></li>
+                            <li><a href="imagineilbro.it/Michel christ-vie bimbakila.pdf" target="_blank">portfolio</a></li>
+                            <li class="dropdown">
+                                    <a class="dropdown-btn" href="#contatti">contattami</a>
+                                    <ul class="dropdown-content">
+                                        <li><a href="mailto: Michelchristviebimbakila@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
+                                        <li><a href="tel:+393792760346"><i class="fa-solid fa-phone"></i></a></li>
+                                        <li><a href="https://github.com/FrontN" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                                    </ul>
+                            </li>
+                    </ul>
+            </nav>
+            <div class="search-bar">
+                <input type="search" id="search-button" name="search" placeholder="Search..">
+            </div>
+        </div>
     </header>
     <main>
         <div class="clearfix">

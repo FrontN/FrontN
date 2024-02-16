@@ -1,6 +1,7 @@
 /*-------------------------------------------------generale---------------------------------------------------------------------------*/
 body{
     font-size: 100%;
+    padding-top: 124px;
 }
 
 * {
@@ -10,6 +11,7 @@ body{
     box-sizing: border-box;
     text-decoration: none;
     list-style-type: none;
+    outline: none;
 }
 
 :root {
@@ -22,6 +24,11 @@ main {
     line-height: 25px;
     background-color: var(--black);
 }
+
+.actual-page {
+    background: var(--green) !important;
+}
+
 h1 {
     color: black;
     text-transform: uppercase;
@@ -33,11 +40,6 @@ h2 {
     text-transform: uppercase;
     font-size: 20px;
     font-style: normal;
-}
-
-a {
-    margin: 0 10px;
-    color: black;
 }
 
 .clearfix::after{
@@ -55,6 +57,9 @@ a {
 
 /*-----------------------------------------------media Query---------------------------------------------------------------------*/
 @media screen and (max-width: 600px){
+    body{
+        padding-top: 71px;
+    }
     main {
         background: white;
     }
@@ -64,6 +69,9 @@ a {
 }
 
 @media screen and (max-width: 992px) and (min-width: 600px){
+    body{
+        padding-top: 100px;
+    }
     #tornasu{
         right: 3px;
     }
