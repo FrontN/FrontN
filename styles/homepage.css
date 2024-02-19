@@ -76,66 +76,82 @@
     font-size: 150%;
 }
 
-.article-grid {
+.articles-container {
+    display: grid;
+    justify-content: space-around;
+}
+
+.articles {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
-    padding: 0  10%;
 }
 
-article {
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
-}
-
-
-article a {
+.articles a {
     color: white;
     background-color: var(--orange);
-    padding: 8px;
-    border-radius: 3px;
+    padding: 8px 16px;
+    border-radius: 5px;
 }
 
-article a:hover {
+.articles a:hover {
     background-color: #444;
 }
 
-article h2 {
+.articles h2 {
     color: white;
     background-color: var(--black);
+    padding: 8px 0;
 }
 
-article p {
-    margin: 10px auto;
+.articles p {
     color: white;
 }
 
-#article1 {
+.article1,
+.article2,
+.article3 {
+    display: grid;
+    width: 390px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
+}
+
+.article1 {
     background: url(../imagineilbro.it/latof.jpg) no-repeat center;
     background-size: cover;
-    word-spacing: -2.5px;
-    letter-spacing: 0.009px;
 }
 
-#article2 {
+.article2 {
     background: url(../imagineilbro.it/profilo.jpg) no-repeat center;
     background-size: cover;
-    line-height: 24.5px;
 }
 
-#article3 {
+.article3 {
     background: url(../imagineilbro.it/latof2.jpg) no-repeat center;
     background-size: cover;
 }
 
 .overlay {
-    width: 160px;
-    height: 290px;
+    width: 195px;
+    display: grid;
+    justify-content: start;
     background-color: rgba(123, 123, 123, 0.7);
-    border-radius: 10px 0 0 10px;
     box-sizing: border-box;
     text-align: center;
-    padding-top: 20px;
+    border-radius: 20px 0 0 20px;
+}
+
+.text {
+    display: grid;
+    align-content: space-between;
+    margin: 20px 0 10px 0;
+}
+
+.call-to-action {
+    display: grid;
+    justify-content: center;
+    border-radius: 0 0 0 10px;
 }
 
 #contatti {
@@ -181,26 +197,33 @@ article p {
         margin-bottom: 3px;
         border-bottom: 1px solid var(--black);
     }
-    .article-grid {
+    .articles{
         grid-template-columns: 1fr;
-        padding: 0 5%;
+
     }
-    article a{
-        font-size: 60%;
+    .articles h2 {
+        font-size: 13px;
+        padding: 4px 0;
     }
-    article p {
-        font-size: 70%;
-        margin: 0 auto;
+    .articles p {
+        font-size: 10px;
     }
-    #article1 {
-        letter-spacing: normal;
-        word-spacing: normal;
+    .articles a {
+        font-size: 12px;
+        padding: 4px 8px;
     }
+    .article1,
+    .article2,
+    .article3 {
+    width: 90vw;
+}
     .overlay {
-        height: 100%;
-        background-color: rgba(123, 123, 123, 0.8);
-        padding-top: 15px;
+        width: 45vw;
     }
+    .text {
+        margin: 15px 0 5px 0;
+    }
+    
     #contatti {
         margin-bottom: 10px;
     }
@@ -209,5 +232,44 @@ article p {
     }
     #contatti p {
         padding: 0;
+    }
+}
+
+@media (max-width: 992px) and (min-width: 601px){
+    .articles h2 {
+        font-size: 13px;
+        padding: 4px 0;
+    }
+    .articles p {
+        font-size: 10px;
+    }
+    .articles a {
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+    .article1,
+    .article2,
+    .article3 {
+    width: 30vw;
+}
+    .overlay {
+        width: 15vw;
+    }
+    .text {
+        margin: 15px 0 5px 0;
+    }
+}
+
+@media  (max-width: 1200px) and (min-width: 993px) {
+    .articles h2 {
+        font-size: 15px;
+    }
+    .article1,
+    .article2,
+    .article3 {
+    width: 30vw;
+}
+    .overlay {
+        width: 15vw;
     }
 }
