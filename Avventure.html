@@ -32,35 +32,31 @@
 </head>
 
 <body>
-    <header>
-        <div
-        style="background: url(imagineilbro.it/ricercaimagine1.jpg) 100% 60%; background-size: cover; text-align: center;">
-        <a id="logo" href="index.html"><span id="ilbro">Front'N</span><span id="punto">.</span></a>
+    <header class="header">
+        <div  class="column logo">
+            <a href="index.html"><span id="Frontn">Front'N</span><span id="punto">.</span></a>
         </div>
-        <nav id="menu">
-            <div id="caché"><button type="button" onclick="alert ('NON ANCORA DISPONIBILE')" style="background-color: var(--fakeblack);"><i class="fa-solid fa-bars"></i></div>
-                <ul id="menuitems" class="clearfix">
-                <li><a href="index.html">home</a></li>
-                <li><a href="Article.html" style="background: var(--green);">articoli</a></li>
-                <li><a href="About.html">about me</a></li>
-                <li><a href="imagineilbro.it/Michel christ-vie bimbakila.pdf" target="_blank">curriculum</a></li>
-                <li class="dropdown">
-                    <a id="dropdownbtn" href="index.html">contattami</a>
-                    <div class="dropdown-content">
-                        <ul style="display: flex;">
-                            <li><a href="mailto: Michelchristviebimbakila@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
-                            <li><a href="tel:+393792760346"><i class="fa-solid fa-phone"></i></a></li>
-                            <li><a href="https://github.com/FrontN" target="_blank"><i class="fa-brands fa-github"></i></a></li>
-                        </ul>
-                    </div>
-                 </li>
-                 <li>
-                    <form action="#">
-                    <input type="search" id="search" name="search" placeholder="Search..">
-                    </form>
-                </li>
-            </ul>
-        </nav>
+        <div class="colum menu-container">
+            <nav class="nav-bar">
+                    <ul class="menu-items">
+                            <li><a href="index.html">home</a></li>
+                            <li class="actual-page"><a href="Article.html">articoli</a></li>
+                            <li><a href="About.html">about me</a></li>
+                            <li><a href="imagineilbro.it/Michel christ-vie bimbakila.pdf" target="_blank">portfolio</a></li>
+                            <li class="dropdown">
+                                    <a class="dropdown-btn" href="#contatti">contattami</a>
+                                    <ul class="dropdown-content">
+                                        <li><a href="mailto: Michelchristviebimbakila@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
+                                        <li><a href="tel:+393792760346"><i class="fa-solid fa-phone"></i></a></li>
+                                        <li><a href="https://github.com/FrontN" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                                    </ul>
+                            </li>
+                    </ul>
+            </nav>
+            <div class="search-bar">
+                <input type="search" id="search-button" name="search" placeholder="Search..">
+            </div>
+        </div>
     </header>
     <main>
         <div class="clearfix">
@@ -117,34 +113,38 @@
                 </article>
             </div>
         </div>
-        <div id="logos">
-            <nav>
-                <a href="https://instagram.com/mi_love242?igshid=MTNiYzNiMzkwZA%3D%3D&utm_source=qr" target="_blank"><i
-                        class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.facebook.com/profile.php?id=100083570462831" target="_blank"><i
-                        class="fa-brands fa-square-facebook"></i></a>
-                        <a href="https://github.com/FrontN" target="_blank"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://youtube.com/@michelchrist-viebimbakila3929?si=nOpWlLrcg3Q8E5ve" target="_blank"><i
-                        class="fa-brands fa-square-youtube"></i></a>
-                <a href="https://www.linkedin.com/in/michel-christ-vie-bimbakila-aaa168228/#:~:text=www.linkedin.com/in/michel%2Dchrist%2Dvie%2Dbimbakila%2Daaa168228"
-                    target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="mailto: Michelchristviebimbakila@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-                <a href="tel:+393792760346"><i class="fa-solid fa-phone"></i></a>
-            </nav>
-        </div>
-</main>
-<aside>
-<div id="tornasu">
-    <a href="Avventure.html" title="Tornare su"><i class="fa-solid fa-chevron-up" style="color: white;"></i></a>
-</div>
-</aside>
-
-<!--footer-->
-<footer style="background: url(imagineilbro.it/ricercaimagine1.jpg) 100% 73%; background-size: cover;">
-    <div id="end">
-        <a href="index.html" id="logo"><span id="ilbro">Front'N</span><span id="punto">.</span></a>
-        <p id="diritti" style="color: white;">© 2023 - ilbro.it All rights reserved.</p>
+    </main>
+    <aside>
+    <div id="tornasu">
+        <a href="About.html" title="Tornare su"><i class="fa-solid fa-chevron-up" style="color: white;"></i></a>
     </div>
-</footer>
-</body>
-</html>
+    </aside>
+    
+    <!--footer-->
+    </aside>
+    
+    <!--footer-->
+    <footer class="footer">
+        <div class="colum footer-label">
+                    <ul class="label-container">
+                            <li><a href="https://instagram.com/mi_love242?igshid=MTNiYzNiMzkwZA%3D%3D&utm_source=qr" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="https://www.facebook.com/profile.php?id=100083570462831" target="_blank"><i
+                                    class="fa-brands fa-square-facebook"></i></a></li>
+                           <li><a href="https://github.com/FrontN" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                            <li><a href="https://youtube.com/@michelchrist-viebimbakila3929?si=nOpWlLrcg3Q8E5ve" target="_blank"><i
+                                    class="fa-brands fa-square-youtube"></i></a><li>
+                            <li><a href="https://www.linkedin.com/in/michel-christ-vie-bimbakila-aaa168228/#:~:text=www.linkedin.com/in/michel%2Dchrist%2Dvie%2Dbimbakila%2Daaa168228"
+                                target="_blank"><i class="fa-brands fa-linkedin"></i></a><li>
+                            <li><a href="mailto: Michelchristviebimbakila@gmail.com"><i class="fa-solid fa-envelope"></i></a><li>
+                            <li><a href="tel:+393792760346"><i class="fa-solid fa-phone"></i></a><li>
+    
+                    </ul>
+        </div>
+        <div  class="column footer-logo">
+            <div class="f-logo"><a href="index.html"><span id="Frontn">Front'N</span><span id="punto">.</span></a></div>
+            <div class="copyright">© 2023 - ilbro.it All rights reserved.</div>
+        </div>
+    </footer>
+    </body>
+    </html>

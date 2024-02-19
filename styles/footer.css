@@ -1,62 +1,93 @@
-#logos{
+
+.footer {
+    position: relative;
     display: flex;
-    justify-content: center;
-    padding-bottom: 20px;
+    flex-direction: column;
+    text-transform: uppercase;
+    z-index: 100;
 }
 
+.footer-label {
+    display: flex;
+    justify-content: center;
+    background-color: var(--black);
+}
+
+.label-container {
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+
+.label-container a {
+    color: black;
+    margin: 0 10px;
+}
 i {
     font-size: 32px;
 }
-/*--------------------------------------------------------footer----------------------------------------------------------------------*/
-footer {
-    position: relative;
-    z-index: 1;
-    text-align: center;
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    background: url(../imagineilbro.it/ricercaimagine1.jpg) 100% 73%;
+    background-size: cover;
 }
 
-footer #logo {
-    font-family: Crete Round;
-    font-size: 65px;
-    text-transform: uppercase;
+.f-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: 65px  Crete Round;
 }
 
-#end {
-    display: inline-block;
-    margin: 30px 0;
+.copyright {
+    display: flex;
+    justify-content: center;
+    color: white;
 }
 
-@media screen and (max-width: 600px){
-    #logos{
-        padding-bottom: 5px;
+@media (max-width: 600px){
+    .f-logo {
+        font-size: 35px;
+    }
+    .label-container{
+        height: 30px;
     }
     i{
         font-size: 20px;
     }
-    footer #logo{
-        font-size: 35px;
-    }
-    #end {
-        margin: 10px 0;
-    }
-    #diritti {
+    .copyright {
         font-size: 9px;
     }
 }
 
 @media screen and (max-width: 992px) and (min-width: 600px){
-    #logos{
-        padding-bottom: 5px;
-    }
-    i{
-        font-size: 30px;
-    }
-    footer #logo{
+    .f-logo {
         font-size: 50px;
     }
-    #end {
-        margin: 10px 0;
+    .label-container{
+        height: 35px;
     }
-    #diritti {
+    i{
+        font-size: 28px;
+    }
+    .copyright {
         font-size: 12px;
+    }
+}
+
+@media (min-width: 993px){
+    .f-logo{
+        font-size: 80px;
+    }
+    .label-container{
+        height: 50px;
+    }
+    i {
+        font-size: 40px;
+    }
+    .copyright {
+        font-size: 20px;
     }
 }
